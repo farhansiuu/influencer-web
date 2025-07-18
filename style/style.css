@@ -95,11 +95,33 @@ button:hover{
     /* text-align: left; */
     margin-right: 100px;
    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.display-flexes{
+    display: flex;
+    
+    flex-direction: row-reverse;
    
-
+}
+.bjn{
+     border-radius: 10px;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.featured{
+    margin-top: 50px;
+    gap: 70px;
+}
+.see{
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(224, 44, 109, 1);
 }
 @media screen and (max-width:576px) {
-    .navbar,ul,.conteiner, .camera{
+    .navbar,ul,.conteiner, .camera, .featured{
        flex-direction: column;
        
     }
@@ -108,10 +130,15 @@ button:hover{
         grid-template-columns: repeat(4,1fr);
     
     }
+    .featured{
+        justify-items: center;
+    }
     .bazar{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
         margin-left: 25px;
+        text-align: center;
+        align-items: center;
     }
     
     .conteiner{
@@ -121,14 +148,18 @@ button:hover{
         margin: 50px;
         justify-items: center;
     }
-}
+   
+    }
+    
+
 @media screen and (min-width:576px) and (max-width:992px) {
-    .navbar,ul,.conteiner, .camera{
+    .navbar,ul,.conteiner, .camera , .featured,.bazar{
        flex-direction: row;
 }
-.sponsor{
+.sponsor,.bazar {
         
         grid-template-rows: repeat(4,1fr);
         justify-items: center;
         
+}
 }
