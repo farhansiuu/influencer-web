@@ -38,7 +38,10 @@ header{
     background-color: rgba(224, 44, 109, 1);
     color: white;
     padding: 10px;
+    cursor: pointer;
 }
+
+  
 .conteiner{
     align-items: center;
     
@@ -50,10 +53,69 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
 }
+.sponsor{
+     /* display: grid; */
+     margin: 90px auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 0 0 4px;
+    color: rgba(241, 238, 238, 0.25);
+}
+main{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+button:hover{
+    background-color: brown;
+}
+.bazar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+   gap: 50px 0px;
+    /* margin-left: 70px; */
+    
+}
+.maal:hover{
+    background-color: lightgray;
+}
+
+    .center{
+ text-align: center;
+ align-items: center;
+ margin: 50px;
+ font-size: 30px;
+}
+
+.maal{
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    /* text-align: left; */
+    margin-right: 100px;
+   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+   
+
+}
 @media screen and (max-width:576px) {
     .navbar,ul,.conteiner, .camera{
        flex-direction: column;
        
+    }
+    .sponsor{
+        
+        grid-template-columns: repeat(4,1fr);
+    
+    }
+    .bazar{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin-left: 25px;
+    }
+    
+    .conteiner{
+        flex-direction: column-reverse;
     }
     .conteiner{
         margin: 50px;
@@ -63,4 +125,10 @@ header{
 @media screen and (min-width:576px) and (max-width:992px) {
     .navbar,ul,.conteiner, .camera{
        flex-direction: row;
+}
+.sponsor{
+        
+        grid-template-rows: repeat(4,1fr);
+        justify-items: center;
+        
 }
