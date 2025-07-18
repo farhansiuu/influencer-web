@@ -120,6 +120,22 @@ button:hover{
     justify-content: flex-end;
     color: rgba(224, 44, 109, 1);
 }
+.about{
+    background-image: url('../images/images/cool\ bg.jpg');
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 90px;
+    padding: 20px;
+}
+.about img{
+    align-items: center;
+    text-align: center;
+    width: 34px;
+}
+.about img{
+    cursor: pointer;
+}
 @media screen and (max-width:576px) {
     .navbar,ul,.conteiner, .camera, .featured{
        flex-direction: column;
